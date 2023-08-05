@@ -10,6 +10,7 @@ class StartScreen extends StatelessWidget {
     return SizedBox(
       width:double.infinity,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(
             'assets/images/quiz-logo.png',
