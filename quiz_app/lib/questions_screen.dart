@@ -32,19 +32,19 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
           const SizedBox(
             height: 50,
           ),
-          AnswerButton(answer: questions[0].answers[order[0]]),
+          AnswerButton(answerText: questions[0].answers[order[0]], onTap: () {}),
           const SizedBox(
             height: 20,
           ),
-          AnswerButton(answer: questions[0].answers[order[1]]),
+          AnswerButton(answerText: questions[0].answers[order[1]], onTap: () {}),
           const SizedBox(
             height: 20,
           ),
-          AnswerButton(answer: questions[0].answers[order[2]]),
+          AnswerButton(answerText: questions[0].answers[order[2]], onTap: () {}),
           const SizedBox(
             height: 20,
           ),
-          AnswerButton(answer: questions[0].answers[order[3]]),
+          AnswerButton(answerText: questions[0].answers[order[3]], onTap: () {}),
         ],
       ),
     );
