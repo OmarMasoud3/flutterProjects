@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/question_buttons.dart';
+import 'package:quiz_app/answer_button.dart';
 import 'package:quiz_app/data/questions.dart';
 import 'dart:math';
 
@@ -16,10 +16,11 @@ class QuestionsScreen extends StatefulWidget {
 
 class _QuestionsScreenState extends State<QuestionsScreen> {
   @override
-  Widget build(context) {
+  Widget build(BuildContext context) {
     var order = [0, 1, 2, 3];
     order.shuffle();
-    return Center(
+    return SizedBox(
+      width: double.infinity,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -29,21 +30,21 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             style: const TextStyle(fontSize: 30, color: Colors.white),
           ),
           const SizedBox(
-            height: 30,
+            height: 50,
           ),
-          QuestionButton(answer: questions[0].answers[order[0]]),
+          AnswerButton(answer: questions[0].answers[order[0]]),
           const SizedBox(
-            height: 10,
+            height: 20,
           ),
-          QuestionButton(answer: questions[0].answers[order[1]]),
+          AnswerButton(answer: questions[0].answers[order[1]]),
           const SizedBox(
-            height: 10,
+            height: 20,
           ),
-          QuestionButton(answer: questions[0].answers[order[2]]),
+          AnswerButton(answer: questions[0].answers[order[2]]),
           const SizedBox(
-            height: 10,
+            height: 20,
           ),
-          QuestionButton(answer: questions[0].answers[order[3]]),
+          AnswerButton(answer: questions[0].answers[order[3]]),
         ],
       ),
     );

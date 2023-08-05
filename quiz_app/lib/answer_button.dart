@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class QuestionButton extends StatelessWidget {
-  const QuestionButton({required this.answer, super.key});
+class AnswerButton extends StatelessWidget {
+  const AnswerButton({required this.answer, super.key});
 
   final String answer;
 
   @override
-  Widget build(context){
+  Widget build(BuildContext context){
     return SizedBox(
             width: 300,
             height: 50,

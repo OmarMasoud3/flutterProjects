@@ -27,7 +27,7 @@ class _QuizState extends State<Quiz> {
   }
 
   @override
-  Widget build(context) {
+  Widget build(BuildContext context) {
 
     return MaterialApp(
       home: Scaffold(

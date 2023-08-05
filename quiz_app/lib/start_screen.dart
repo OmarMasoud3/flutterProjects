@@ -6,11 +6,11 @@ class StartScreen extends StatelessWidget {
   final void Function() startQuiz;
 
   @override
-  Widget build(context) {
-    return SizedBox(
-      width:double.infinity,
+  Widget build(BuildContext context) {
+    return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
         children: [
           Image.asset(
             'assets/images/quiz-logo.png',
